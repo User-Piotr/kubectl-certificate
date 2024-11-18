@@ -1,7 +1,7 @@
 import base64
 
-from src.certificate.data import Certificate
-from src.certificate.data import Parameters
+from certificate.data import Certificate
+from certificate.data import Parameters
 from cryptography import x509
 from cryptography.hazmat.backends import default_backend
 from rich.console import Console

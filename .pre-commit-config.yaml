@@ -1,0 +1,41 @@
+---
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-case-conflict
+      - id: check-ast
+      - id: debug-statements
+      - id: check-json
+
+      - id: check-yaml
+        name: Check Yaml
+      - id: end-of-file-fixer
+        name: End of File Fixer
+      - id: trailing-whitespace
+        name: Trailing Whitespace
+
+  - repo: https://github.com/psf/black
+    rev: 24.4.2
+    hooks:
+      - id: black
+        name: Black
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: '7.1.1'
+    hooks:
+      - id: flake8
+        name: Flake8
+        args: ["--max-line-length=88"]
+
+  - repo: https://github.com/asottile/reorder-python-imports
+    rev: v3.13.0
+    hooks:
+      - id: reorder-python-imports
+        name: Reorder Python Imports
+
+  - repo: https://github.com/asottile/yesqa
+    rev: v1.5.0
+    hooks:
+      - id: yesqa
+        name: Yesqa
